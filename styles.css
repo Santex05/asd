@@ -1,8 +1,8 @@
-<style>
-            * {
+
+            html{
                 box-sizing: border-box;
             }
-            html,
+           
             body {
                 padding: 0;
                 margin: 0;
@@ -54,4 +54,4 @@
                     flex: 1 1 auto;
                 }
             }
-        </style>
+       
