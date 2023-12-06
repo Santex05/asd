@@ -1,57 +1,97 @@
 
-            html{
-                box-sizing: border-box;
-            }
-           
-            body {
-                padding: 0;
-                margin: 0;
-                font-family: verdana, arial, sans-serif;
-            }
+html{
+    box-sizing: border-box;
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+body {
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
 
-            body {
-                color: #fff;
-                font-size: 1.1em;
-                padding: 1em;
-                display: flex;
-                flex-direction: column;
-            }
+body {
+    color: #fff;
+    font-size: 1.1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    max-width: 1800px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__log {
+    display: block;
+    
+}
+.header__list {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    background: linear-gradient(214.02deg, #c5c5c5 6.04%, #837b91 92.95%);
+    padding: 10px, 20px;
+    margin: 8px;
+    
+}
+.header__link {
+    color: #fff;
+    text-decoration: none;
+}
+.header__item {
+    margin: 10px;
+}
+.header__link_gradients {
+    font-size: 50px;
 
-            main {
-                display: flex;
-                flex-direction: column;
-            }
+}
 
-            article {
-                background-color: #dbd7d7;
-                flex: 2 2 12em;
-                padding: 1em;
-            }
 
-            nav,
-            aside {
-                flex: 1;
-                background-color: #455a64;
-            }
+main {
+    display: flex;
+    flex-direction: column;
+}
 
-            nav {
-                order: -1;
-            }
+article {
+    background-color: #dbd7d7;
+    flex: 2 2 12em;
+    padding: 1em;
+}
 
-            header,
-            footer {
-                flex: 0 0 5em;
-                background-color: #37474f;
-            }
+nav,
+aside {
+    flex: 1;
+    background-color: #455a64;
+}
 
-            @media screen and (min-width: 600px) {
-                body {
-                    min-height: 100vh;
-                }
-                main {
-                    flex-direction: row;
-                    min-height: 100%;
-                    flex: 1 1 auto;
-                }
-            }
-       
+nav {
+    order: -1;
+}
+
+header,
+footer {
+    flex: 0 0 5em;
+    background-color: #37474f;
+}
+ul {
+    display: flex;
+    padding: 10px 15px;
+}li{ 
+    margin-right: 100px;
+    list-style-type:none;
+}
+
+
+@media screen and (min-width: 600px) {
+    body {
+        min-height: 100vh;
+    }
+    main {
+        flex-direction: row;
+        min-height: 100%;
+        flex: 1 1 auto;
+    }
+}
